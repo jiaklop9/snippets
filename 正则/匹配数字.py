@@ -5,9 +5,9 @@ import re
 
 
 def main():
-    text = '查询成功，共147条。'
-    match = re.search('\d+', text)
-    print(int(match.group()))
+    text = '2024年1月'
+    match = re.search(r'\d+年\d+月', text)
+    print(match)
 
 
 if __name__ == '__main__':
