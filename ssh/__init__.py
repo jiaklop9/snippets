@@ -4,6 +4,8 @@
 from netmiko import ConnectHandler
 from netmiko import SSHDetect
 
+from local_settings import h3c, hill_stone
+
 
 def ssh_dev_exc(ip, commands, port=22, username='readonly', password='readonly'):
 
@@ -35,15 +37,5 @@ def ssh_dev_exc(ip, commands, port=22, username='readonly', password='readonly')
 
 
 if __name__ == '__main__':
-    some_dev_ssh_info = {
-        'port': 22,
-        # h3c
-        'ip': '',
-        'username': 'admin',
-        'password': '',
-        'commands': ['super', 'admin@123']
-
-
-    }
-    outputs = ssh_dev_exc(**some_dev_ssh_info)
+    outputs = ssh_dev_exc(**h3c)
     print(outputs)
