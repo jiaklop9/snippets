@@ -51,6 +51,6 @@ def fetch_emails(username, password, imap_server, folder="inbox"):
 
 # 使用示例
 username = "zhike.liu@foxmail.com"
-password = "qrjruymrvjphcdjf"
+password = "xxx"
 imap_server = "imap.qq.com"
 fetch_emails(username, password, imap_server)

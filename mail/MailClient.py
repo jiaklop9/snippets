@@ -111,10 +111,10 @@ config = {
     'subject': "An email with attachment from Python",
     'body': "This is an email with attachment sent from Python",
     'body_type': 'plain',
-    'receivers': ["1714476383@qq.com"],
+    'receivers': ["x@qq.com"],
     'attaches': r'D:\workspace\snippets\mail\企业微信对接.pdf',
-    'sender': '1714476383@qq.com',
-    'password': 'tjjobomdevjlccjb'
+    'sender': 'x@qq.com',
+    'password': 'x'
  }
 
 #########################################################################
