@@ -30,5 +30,6 @@ def bubble_sort_v2(data_list):
 
 
 if __name__ == '__main__':
-    # bubble_sort(data_list=[0, 1, 2, 3, 4, 5, 6, 7, 10, 99, 13])
+    bubble_sort(data_list=[0, 1, 2, 3, 4, 5, 6, 7, 10, 99, 13])
+    print('*' * 100)
     bubble_sort_v2(data_list=[0, 1, 2, 3, 4, 5, 6, 7, 10, 99, 13])

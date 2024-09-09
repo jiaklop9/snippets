@@ -30,7 +30,7 @@ class Encrypt(object):
         cipher = AES.new(self.key, AES.MODE_CBC, self.iv)
         # 处理明文
         content_padding = self.pkcs7padding(content)
-        # 加密
+        # 加密算法
         encrypt_bytes = cipher.encrypt(content_padding.encode('utf-8'))
         # 重新编码
         result = str(base64.b64encode(encrypt_bytes), encoding='utf-8')
@@ -55,5 +55,5 @@ if __name__ == '__main__':
     a = Encrypt(key='ONxYDyNaCoyTzsp83JoQ3YYuMPHxk3j7', iv='yNaCoyTzsp83JoQ3')
     e = a.aes_encrypt(json.dumps(p_json))
     d = a.aes_decrypt(e)
-    print("加密:", e)
+    print("加密算法:", e)
     print("解密:", d)
